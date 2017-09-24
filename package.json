@@ -1,0 +1,30 @@
+{
+  "name": "angular2-mean-stack",
+  "version": "1.0.0",
+  "description": "mean stack with angular 2 example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DivWork/angular2-mean-stack.git"
+  },
+  "keywords": [
+    "mean",
+    "stack",
+    "angular",
+    "2",
+    "test",
+    "application"
+  ],
+  "author": "Divyesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DivWork/angular2-mean-stack/issues"
+  },
+  "homepage": "https://github.com/DivWork/angular2-mean-stack#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
