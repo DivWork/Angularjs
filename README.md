@@ -1,8 +1,12 @@
 # Angularjs
 AngularJs Practice and development
 
-#Installation
-(Terminal for developers)
+Installation:<br>
+
+(Terminal for developers)<br>
+
+Please Follow the following commands in your Terminal or Command Prompt to clone and run project :<br>
+
 => git clone <repository>
 
 => cd ../repository-cloned/
@@ -15,7 +19,7 @@ AngularJs Practice and development
 
 => cd ..
 
-=> run nodemon index.js
+=> nodemon index.js
 
 => cd client
 
