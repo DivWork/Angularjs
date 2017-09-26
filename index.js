@@ -11,13 +11,15 @@ const authentication = require('./routes/authentication')(router);
 const bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.uri,(err)=>{
+mongoose.connect(config.uri, 	(err)=>{
 	if(err){
 		console.log('Databse not connected',err);
 	}else{
 		console.log('connected to database : ' +config.db);
 	}
-});
+}
+);
+
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
