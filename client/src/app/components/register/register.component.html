@@ -1,0 +1,33 @@
+<br />
+<h1 class="text-center" style="color:#480084"> Register Here </h1>
+
+<form [formGroup]="form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="email">User Name:</label>
+        <input type="text" class="form-control" id="UserName" placeholder="Enter email" name="UserName" formControlName="UserName">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" formControlName="password">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Confirm Password:</label>
+        <input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="confirm" formControlName="confirm">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<hr>
+<h3> <u>Form Components: </u></h3>
+<br>
+<p> UserName: {{form.controls.UserName.value}} </p>
+<p> Email: {{form.controls.email.value}} </p>
+<p> Password: {{form.controls.password.value}} </p>
+<p> Confirm: {{form.controls.confirm.value}} </p>

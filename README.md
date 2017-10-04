@@ -5,7 +5,7 @@ Installation:<br>
 
 (Terminal for developers)<br>
 
-Please Follow the following commands in your Terminal or Command Prompt to clone and run project :<br>
+Please Follow the following commands in your Terminal or Command Prompt to clone and run project :<br>  
 
 => git clone <repository>
 

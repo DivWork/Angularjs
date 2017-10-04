@@ -49,7 +49,8 @@ let passwordValidLengthChecker = (password) => {
   if(!password){
     return false;
   }else{
-    if(password.length<8 || password.length > 35){
+    // console.log(password.length);
+    if(password.length > 8 || password.length < 35){
       return false;
     }else{
       return true;
@@ -61,10 +62,22 @@ let validPassword = (password) => {
  if(!password){
    return false;
  }else{
-   const regExp = new RegExp(/^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[\d])(?=.*?[\W]).{8,35}$/);
-   return regExp.test(password);
+   return true;
+  //  const regExp = new RegExp(/^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[\d])(?=.*?[\W]).{8,35}$/);
+  //  return regExp.test(password);
  }
 };
+
+const passwordValidators = [
+  // {
+  //   validator: validPassword,
+  //   message: 'Password must contain Uppercase, Lowercase, number and special-character'
+  // },
+  {
+    validator: passwordValidLengthChecker,
+    messsage: 'password length should be greater than 8'
+  }
+];
 
 const usernameValidators = [
   {
@@ -75,7 +88,7 @@ const usernameValidators = [
     validator: validUsername,
     message: 'User Name should be specific'
   }
-]
+];
 
 const emailValidators = [
     {
@@ -85,7 +98,7 @@ const emailValidators = [
       validator: ValidemailChecker, message: 'Valid email check failed'
     }
 
-]
+];
 
 
 var userSchema = new Schema({
